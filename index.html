@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>संवाद.AI</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  </head>
+  <body>
+    <div id="apiMain" class="z-ind1">
+      
+        <div id="Apicont">
+           <div id="ApiSide" class="">
+            <p>
+                Ready to revolutionize your PDF experience? Follow these steps:
+<br><br>
+            👉 Click the "Get API Key" link.
+            <br><br>
+            🔑 Your API Key awaits in your account dashboard.
+            <br><br>
+            📋 Paste it here and unlock the magic!
+            </p>
+           </div>
+          <div id="Apicontainer"> <div class="APirow">
+            <h4>ChatPDF API key for url option</h4>
+            <input id="Apiinp1" class="Apiinp" type="text" />
+            <a target="_blank"  href="https://www.chatpdf.com/docs/api/backend"
+              >Get it from here</a
+            >
+          </div>
+          
+          <div class="APirow">
+            <h4>Open Ai tts APi key</h4>
+            <input class="Apiinp" type="text" />
+            <a target="_blank" href="https://platform.openai.com/api-keys">Get it from here</a>
+          </div>
+  
+          <div id="ApibtnContainer">
+            <button id="Apibtn">Submit</button>
+          </div></div>
+          <div id="cross"><i class="fi fi-rr-cross-small"></i></div>
+
+          </div>
+    </div>
+    <div id="main" class="blur">
+      <div class="dispnone1" id="sidepanel">
+        <div class="gotu-regular" id="homebtn">संवाद.AI</div>
+        <hr />
+        <div id="options">
+          <div id="opt0" class="opt">
+                  
+            <i class="fi fi-rr-api"></i>
+            Add API
+          </div>
+          <div id="opt1" class="opt">
+                  
+            <i  class="fi fi-rr-info"></i>
+            About
+          </div>
+          <div id="opt2" class="opt">
+            <i class="fi fi-rr-settings-sliders"></i>
+            Setting
+          </div>
+          <div id="opt3" class="opt">
+            <i class="fi fi-rr-license"></i>
+            license
+          </div>
+        </div>
+      </div>
+      <div id="chatbot">
+        <div id="HeadContainer">
+          <div id="cha">
+            <div id="hamContainer">
+              <button id="sidebtn" type="button">
+                <i class="fi fi-rr-bars-sort"></i>
+              </button>
+            </div>
+            <div id="name1">
+              <p class="gotu-regular" id="name2">संवाद.AI</p>
+            </div>
+            <div id="title1">
+              <div id="title" onclick="exportToPDF()" class="dispnone">
+                Export PDF
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="chatMain">
+          <div class="blankDiv"></div>
+          <div id="chat">
+            <div id="suggestionBox">
+              <div class="suggestion1">
+                &rarr; Hey संवाद.AI, what can I do with this PDF?
+              </div>
+              <div class="suggestion1">
+                &rarr; Hey संवाद.AI, summarize this for me and let me know what I
+                can do with it.
+              </div>
+            </div>
+          </div>
+          <div class="blankDiv"></div>
+        </div>
+        <footer>
+          <div class="div1"></div>
+          <div id="userInputContainer">
+            <div id="userInputBox">
+             <form action="" onsubmit="submitForm(event)" id="form"> <input type="text" placeholder="Message" id="userInput" /></form>
+              <div id="addbtns1">
+                <div id="addbtns" class="">
+                  <button id="addPDF">
+                    <i class="fi fi-rr-link-alt"></i>
+                  </button>
+                  <label onclick="fun1()" for="pdfFile"
+                    ><i class="fi fi-rr-file-pdf"></i></label>
+                  <input
+                    type="file"
+                    id="pdfFile"
+                    accept=".pdf"
+                    class="dispnone"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <button  title="Add pdf" id="add-btn" type="button"><img src="images/svg/add-circle-svgrepo-com.svg" alt=""></button> -->
+            <div class="" id="sendBTN">
+              <button id="send" type="submit">
+                <i class="fi fi-rr-paper-plane-top"></i>
+              </button>
+            </div>
+          </div>
+          <div class="div1"></div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    
+  </body>
+</html>
