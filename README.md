@@ -1,4 +1,5 @@
 # SamvaadAi
+https://akshatshukla13.github.io/SamvaadAi/
 
 PDF Chat and Audio Response Application
 This project allows users to interact with PDFs via chat and receive responses in both text and audio formats. Users can upload a PDF or provide a URL to a PDF, ask questions, and receive answers. The application also supports exporting the chat to a PDF.
